@@ -1,0 +1,88 @@
+{
+    "connection_overrides": [
+        {
+            "taskId": "51",
+            "task": "GenericConnectorTask",
+            "parameters": {
+                "connectionName": "reservationsdb"
+            }
+        },
+        {
+            "taskId": "30",
+            "task": "GenericConnectorTask",
+            "parameters": {
+                "connectionName": "reservationsdb"
+            }
+        },
+        {
+            "taskId": "49",
+            "task": "GenericConnectorTask",
+            "parameters": {
+                "connectionName": "reservationsdb"
+            }
+        },
+        {
+            "taskId": "22",
+            "task": "GenericConnectorTask",
+            "parameters": {
+                "connectionName": "reservationsdb"
+            }
+        },
+        {
+            "taskId": "63",
+            "task": "GenericConnectorTask",
+            "parameters": {
+                "connectionName": "reservationsdb"
+            }
+        },
+        {
+            "taskId": "55",
+            "task": "GenericConnectorTask",
+            "parameters": {
+                "connectionName": "reservationsdb"
+            }
+        },
+        {
+            "taskId": "58",
+            "task": "GenericConnectorTask",
+            "parameters": {
+                "connectionName": "reservationsdb"
+            }
+        },
+        {
+            "taskId": "46",
+            "task": "GenericConnectorTask",
+            "parameters": {
+                "connectionName": "reservationsdb"
+            }
+        },
+        {
+            "taskId": "31",
+            "task": "GenericConnectorTask",
+            "parameters": {
+                "connectionName": "reservationsdb"
+            }
+        },
+        {
+            "taskId": "57",
+            "task": "GenericConnectorTask",
+            "parameters": {
+                "connectionName": "reservationsdb"
+            }
+        },
+        {
+            "taskId": "61",
+            "task": "GenericConnectorTask",
+            "parameters": {
+                "connectionName": "reservationsdb"
+            }
+        },
+        {
+            "taskId": "50",
+            "task": "GenericConnectorTask",
+            "parameters": {
+                "connectionName": "reservationsdb"
+            }
+        }
+    ]
+}
