@@ -48,12 +48,20 @@ Grant the Secret Manager Admin role to the Cloud Build Service Agent (to create 
         --role="roles/secretmanager.admin"
 ```
 
-Grant the Cloud KMS Decryptor role to the Cloud Build Service Agent (to to decrypt the database password)
+Grant the Cloud KMS Decryptor role to the Cloud Build Service Agent (to decrypt the database password)
 
 ```
     gcloud projects add-iam-policy-binding $(gcloud config get-value project) \
         --member="serviceAccount:service-$PROJECT_NUMBER@gcp-sa-cloudbuild.iam.gserviceaccount.com" \
         --role="roles/cloudkms.cryptoKeyDecrypter"
+```
+
+Grant the Service Account User role to the Cloud Build Service Agent (to access other SAs)
+
+```
+    gcloud projects add-iam-policy-binding $(gcloud config get-value project) \
+        --member="serviceAccount:service-$PROJECT_NUMBER@gcp-sa-cloudbuild.iam.gserviceaccount.com" \
+        --role="roles/iam.serviceAccountUser"
 ```
 
 
