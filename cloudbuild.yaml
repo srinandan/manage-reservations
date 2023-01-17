@@ -60,7 +60,7 @@ steps:
       /tmp/integrationcli token cache -t $(cat /tmp/token)
 
       #create the integration version
-      /tmp/integrationcli integrations create -n $(cat /tmp/name) -f $(cat /tmp/filename) -u $SHORT_SHA -o ./overrides/overrides.json > /tmp/response
+      /tmp/integrationcli integrations create -n $(cat /tmp/name) -f $(cat /tmp/filename) -o ./overrides/overrides.json -u $SHORT_SHA > /tmp/response
       echo "integration response: " $(cat /tmp/response)
       basename $(cat /tmp/response | jq -r .name) > /tmp/version
       echo "integration version: " $(cat /tmp/version)
