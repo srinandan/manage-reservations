@@ -78,7 +78,7 @@ substitutions:
   _KMS_RING_NAME: "<ring-name>"
   _KMS_KEY_NAME: "<key-name>"
 ```
-Ensure this service account has LogWriter permission.
+Ensure this service account has roles/cloudsql.editor permission.
 
 3. Trigger the build manually
 
