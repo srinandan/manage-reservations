@@ -17,7 +17,7 @@
 
 steps:
 - id: 'Create connections if not present'
-  name: ghcr.io/srinandan/integrationcli-builder:v0.60.1-beta
+  name: ghcr.io/srinandan/integrationcli-builder:latest
   entrypoint: 'bash'
   args:
     - -c
@@ -41,7 +41,7 @@ steps:
       done
 
 - id: 'Create and publish the integration version'
-  name: ghcr.io/srinandan/integrationcli-builder:v0.60.1-beta
+  name: ghcr.io/srinandan/integrationcli-builder:latest
   entrypoint: 'bash'
   args:
     - -c
